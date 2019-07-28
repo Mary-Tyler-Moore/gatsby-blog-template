@@ -10,8 +10,11 @@ module.exports = {
       feed_url: urljoin(config.siteUrl, config.pathPrefix, config.siteRss),
       title: config.siteTitle,
       description: config.siteDescription,
-      image_url: `${urljoin(config.siteUrl, config.pathPrefix)}/logos/logo-512x512.png`,
-      copyright: config.copyright,
+      image_url: `${urljoin(
+        config.siteUrl,
+        config.pathPrefix
+      )}/logos/logo-512x512.png`,
+      copyright: config.copyright
     }
   },
   plugins: [
@@ -70,6 +73,8 @@ module.exports = {
     "gatsby-plugin-twitter",
     "gatsby-plugin-sass",
     "gatsby-plugin-sitemap",
+    "gatsby-plugin-styled-components",
+    "gatsby-plugin-netlify-cms",
     {
       resolve: "gatsby-plugin-manifest",
       options: {
