@@ -1,5 +1,5 @@
 backend:
-  name: github
+  name: git-gateway
   repo: Mary-Tyler-Moore/gatsby-blog-template
   branch: master
 
